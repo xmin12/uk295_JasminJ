@@ -18,13 +18,12 @@ import lombok.Setter;
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     //@Size(min = 3, max = 20)
     private String name;
     //@Size(min = 10, max = 10)
     private String phonenumber;
-    @PositiveOrZero
-    private int addressID;
+    private Integer addressID;
 
 
 }

@@ -1,4 +1,4 @@
-package ch.noseryoung.supplier_295.domain.security;
+package ch.noseryoung.supplier_295.security;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -34,6 +34,7 @@ public class SecurityConfig{
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()//enable HTTP-Basic Auth
                 //set security by urls
+
                 .anyRequest()
                 .authenticated()
                 .and().httpBasic()
